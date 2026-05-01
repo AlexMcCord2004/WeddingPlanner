@@ -7,6 +7,15 @@ struct VendorListView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                
+                Image("weddingHeader")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 150)
+                    .clipped()
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .padding(.horizontal)
+                
                 DashboardView(viewModel: viewModel)
                 
                 List {
